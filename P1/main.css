@@ -1,0 +1,105 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.nav {
+	background: linear-gradient(#b968bd, #8f1d8f);
+	display: flex;
+	width: 60%;
+	margin: 50px auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 1.1rem;
+}
+
+.nav .nav-btn {
+	margin: 10px 25px;
+	padding: 10px 20px;
+	display: flex;
+	font-weight: bold;
+	position: relative;
+}
+
+.nav .nav-btn:hover,
+.home {
+	background: linear-gradient(#f2ecec, #e2c8e4);
+	border-radius: 15px;
+	color: black;
+	cursor: pointer;
+}
+
+.content {
+	position: absolute;
+	top: 0px;
+	display: none;
+	top: 100%;
+	left: 0px;
+	width: 200px;
+	background: linear-gradient(#fffcff, #a8bbcd);
+	border-radius: 15px;
+	font-weight: 100;
+}
+.content div {
+	padding: 10px;
+	width: 200px;
+}
+.content > div:hover {
+	background: linear-gradient(#b968bdb7, #8f1d8fb9);
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.tutorials:hover .content {
+	display: block;
+}
+
+.js-menu {
+	position: absolute;
+	left: 90%;
+	top: 17%;
+	color: black;
+	background-color: #f6f7f8;
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	display: none;
+	padding: 0px !important;
+    
+}
+.js-menu p {
+	padding: 10px;
+    
+}
+.js:hover .js-menu {
+	
+    display: block;
+}
+.js-menu p:hover {
+	background: linear-gradient(#b968bdb7, #8f1d8fb9);
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	color: white;
+    
+}
+
+.lesson-menu {
+	position: absolute;
+	top: 100%;
+	color: black;
+	background-color: #f6f7f8;
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.lesson-menu p {
+	padding: 8px 5px 8px 15px;
+}
+
+.lesson:hover .lesson-menu {
+	display: block;
+}
