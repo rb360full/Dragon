@@ -1,0 +1,45 @@
+p {
+  border: solid 2px #ccc;
+  width: 100px;
+  height: 50px;
+  background-color: aqua;
+  text-align: center;
+}
+
+.name:hover {
+  background-color: red;
+}
+
+.name:focus {
+  border: solid 5px green;
+}
+/* توضیحات */
+
+/* 
+سودو کلاس focus و hover برای انتخاب المان و استایل دهی به اون در زمانی هست که المان focus میشه یا hover میشه
+خط اول در صورتی هست که المان فقط focus بشه
+خط دوم در صورتیه که فقط hover بشه
+خط سوم اگر المان در آن واحد هم hover بشه و هم focus بشه سلکت میشه و استایل میگیره. از نظر منطقی مثل AND میمونه
+
+خط چهارم هم در صورتیه که المان یکی از حالت های focus یا hover رو داشته باشه که در اون صورت سلکت میشه . از نظر منطقی  مثل OR میمونه */
+
+/*  */
+
+.family:focus {
+  border: solid 5px green;
+}
+
+.family:hover {
+  border: solid 5px green;
+}
+
+.family:hover:focus {
+  background-color: red;
+  border: solid 5px green;
+}
+
+.family:hover,
+.family:focus {
+  background-color: red;
+  border: solid 5px green;
+}
