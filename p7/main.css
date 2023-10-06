@@ -1,0 +1,7 @@
+p{
+    user-select: none !important;
+}
+input::placeholder{
+    color: red;
+}
+
