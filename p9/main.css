@@ -1,0 +1,63 @@
+@font-face {
+  font-family: ruby;
+  src: url(fonts/Cold\ Warm.otf);
+}
+.effort {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border: solid 1px;
+}
+
+.effort > h1 {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: ruby;
+}
+
+.effort > h1:hover + .box1 {
+  animation: box1 2s ease 1 forwards;
+}
+.effort > h1:hover + .box1 + .box2 {
+  animation: box2 3s ease 1 forwards;
+}
+
+.box1 {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: -100%;
+  left: 0;
+  background-color: #e1631a;
+}
+
+@keyframes box1 {
+  from {
+    background-color: #e1631a;
+    top: -100%;
+  }
+  to {
+    top: 30%;
+  }
+}
+
+.box2 {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  transform: translateY(50%);
+  bottom: -100%;
+  right: 0;
+  background-color: #e1631a;
+}
+
+@keyframes box2 {
+  from {
+    background-color: #e1631a;
+    bottom: -100%;
+  }
+  to {
+    bottom: 30%;
+  }
+}
