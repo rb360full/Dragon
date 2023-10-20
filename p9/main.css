@@ -6,7 +6,6 @@
   position: relative;
   width: 400px;
   height: 600px;
-  border: solid 1px;
 }
 
 .effort > h1 {
@@ -21,13 +20,19 @@
 .effort > h1:hover + .box1 + .box2 {
   animation: box2 3s ease 1 forwards;
 }
+.effort > h1:hover + .box1 + .box2 + .box3 {
+  animation: box3 1s ease 1 forwards;
+}
+.effort > h1:hover + .box1 + .box2 + .box3 + .box4 {
+  animation: box4 1s ease 1 forwards;
+}
 
 .box1 {
-  width: 50px;
-  height: 100px;
+  width: 80px;
+  height: 0px;
   position: absolute;
-  transform: translateY(-50%);
-  top: -100%;
+  /* transform: translateY(-50%); */
+  top: 0%;
   left: 0;
   background-color: #e1631a;
 }
@@ -35,19 +40,20 @@
 @keyframes box1 {
   from {
     background-color: #e1631a;
-    top: -100%;
+    top: 0%;
   }
   to {
-    top: 30%;
+    top: 0%;
+    height: 100px;
   }
 }
 
 .box2 {
-  width: 50px;
-  height: 100px;
+  width: 80px;
+  height: 0px;
   position: absolute;
-  transform: translateY(50%);
-  bottom: -100%;
+  /* transform: translateY(50%); */
+  bottom: 0%;
   right: 0;
   background-color: #e1631a;
 }
@@ -55,9 +61,51 @@
 @keyframes box2 {
   from {
     background-color: #e1631a;
-    bottom: -100%;
+    bottom: 0%;
   }
   to {
-    bottom: 30%;
+    bottom: 0%;
+    height: 100px;
+  }
+}
+
+.box3 {
+  width: 50%;
+  height: 0px;
+  position: absolute;
+  transform: translateY(50%);
+  bottom: 0%;
+  right: 0;
+  background-color: #e1631a;
+}
+
+@keyframes box3 {
+  from {
+    background-color: #e1631a;
+    bottom: 0%;
+  }
+  to {
+    bottom: 50%;
+    height: 100px;
+  }
+}
+.box4 {
+  width: 50%;
+  height: 0px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 0%;
+  left: 0;
+  background-color: #e1631a;
+}
+
+@keyframes box4 {
+  from {
+    background-color: #e1631a;
+    top: 0%;
+  }
+  to {
+    top: 50%;
+    height: 100px;
   }
 }
