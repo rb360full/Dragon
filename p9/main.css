@@ -5,13 +5,20 @@
 .effort {
   position: relative;
   width: 400px;
-  height: 600px;
+  height: 400px;
 }
 
 .effort > h1 {
   text-decoration: underline;
   cursor: pointer;
   font-family: ruby;
+  color: #e1631a;
+}
+
+.effort > h1:hover {
+  color: black;
+  transition: all 1s;
+  transition-delay: 600ms;
 }
 
 .effort > h1:hover + .box1 {
@@ -21,10 +28,10 @@
   animation: box2 3s ease 1 forwards;
 }
 .effort > h1:hover + .box1 + .box2 + .box3 {
-  animation: box3 1s ease 1 forwards;
+  animation: box3 2s ease 1 forwards;
 }
 .effort > h1:hover + .box1 + .box2 + .box3 + .box4 {
-  animation: box4 1s ease 1 forwards;
+  animation: box4 2s ease 1 forwards;
 }
 
 .box1 {
