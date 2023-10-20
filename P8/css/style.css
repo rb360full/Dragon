@@ -8,3 +8,8 @@
 .form-floating > input:focus + label {
   color: red !important;
 }
+
+.icon:hover img {
+  background-color: #00add5 !important;
+  border: none !important;
+}
